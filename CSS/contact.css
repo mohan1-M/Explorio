@@ -1,6 +1,35 @@
 .contact{
-    height: 150px;
+    height: 170px;
     background-color: black;
     color: white;
+    margin-bottom: 0px;
     
 }
+
+.footer {
+  
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin:55px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  
+  .social-icons a:hover {
+    color: #0077b5;
+    transform: scale(1.2);
+  }
+  
+  .footer-text {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
