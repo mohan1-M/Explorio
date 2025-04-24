@@ -16,6 +16,7 @@
   }
   
   .boxes{
+  position: relative;
   display: flex;
   flex-direction: column;
   display: inline-block;
@@ -25,8 +26,8 @@
   margin-left: 40px;
   margin-right: 25px;
   margin-top: 38px;
-  cursor: pointer;
   border-radius: 5px;
+  transition: transform .4s;
  
   }
   
@@ -39,4 +40,24 @@
 
    
   }
- 
+  .boxes:hover{
+    transform: scale(1.10);
+    box-shadow: black 0px 1px 10px 0px ;
+    cursor: pointer;
+  }
+ .overlay-topdestination{
+  position: absolute; 
+  bottom: 0; 
+  width:max-content;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 15px;
+  padding: 5PX;
+  text-align: center;
+  font-family: cursive;
+
+ }
+.boxes:hover .overlay-topdestination{
+  font-size: 17px;
+}

@@ -16,6 +16,7 @@
   }
   
   .box{
+  position: relative;
   display: flex;
   flex-direction: column;
   display: inline-block;
@@ -27,6 +28,7 @@
   cursor: pointer;
   border-radius: 14px;
   justify-content: center;
+  transition: 0.4s;
   
  
   }
@@ -38,3 +40,24 @@
        border-radius: 10px;
     
   }
+  .box:hover{
+     transform: scale(1.15);
+  }
+  .visafree-overlay{
+    position: absolute;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    bottom: 0;
+    padding: 5px;
+    transition: .5s ease;
+    opacity:1;
+    font-size: 25px;
+    text-align: center;
+    width:100%;
+    font-family: "Playwrite AU SA";
+    font-weight: 300;
+
+  }
+.box:hover .visafree-overlay{
+  font-size:30px ;
+}
